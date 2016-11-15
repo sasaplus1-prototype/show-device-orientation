@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>show device orientation</title>
+  </head>
+  <body>
+    <p>screen.orientation.type: <span id="js-orientation-type"></span></p>
+    <p>screen.orientation.angle: <span id="js-orientation-angle"></span></p>
+
+    <input id="js-button-request-fullscreen" type="button" value="request fullscreen">
+    <input id="js-button-cancel-fullscreen" type="button" value="cancel fullscreen">
+
+    <br>
+
+    <label>
+      lock type:
+      <select id="js-select-lock-type">
+        <option value="portrait-primary">portrait-primary</option>
+        <option value="portrait-secondary">portrait-secondary</option>
+        <option value="landscape-primary">landscape-primary</option>
+        <option value="landscape-secondary">landscape-secondary</option>
+        <option value="portrait">portrait</option>
+        <option value="landscape">landscape</option>
+        <option value="natural">natural</option>
+        <option value="any">any</option>
+      </select>
+    </label>
+
+    <br>
+    
+    <input id="js-button-lock" type="button" value="lock">
+    <input id="js-button-unlock" type="button" value="unlock">
+
+    <script src="index.js"></script>
+  </body>
+</html>
